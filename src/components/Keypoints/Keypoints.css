@@ -1,0 +1,156 @@
+
+.Keypoints{
+    --INVERSE-RATIO:842 / 595;
+    --EXTRA-SPACE:200px;
+    border-radius: 8px;
+    border: 0.5px solid rgba(14, 82, 53, 0.50);
+    background: #FFF;
+    padding: 30px;
+    margin-top: 10px;
+    height: max-content;
+    /* height: 600px; */
+    max-height: calc((var(--MAX-WIDTH) * var(--INVERSE-RATIO)) - var(--EXTRA-SPACE));
+    overflow: hidden;
+}
+
+.point{
+    margin-bottom: 30px;
+    font-family: Poppins;
+}
+
+.point-heading{
+    color: #0E5235;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.point-content{
+    color: #272B2A;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.point ul li{
+    margin-bottom: 10px;
+    
+}
+
+.point span{
+    display: block;
+    font-weight: 600;
+}
+
+.KeypointsTable{
+    border-radius: 4px;
+    border: 0.5px solid rgba(16, 142, 102, 0.54);
+    overflow: hidden;
+    width: auto;
+    margin: 10px 0px;
+    background: linear-gradient(0deg, rgba(16, 142, 102, 0.05) 0%, rgba(16, 142, 102, 0.05) 100%), #FCFFFE;
+  }
+  
+  .pointTable{
+    width: 100%;
+    overflow: hidden;
+    /* background: linear-gradient(0deg, rgba(39, 43, 42, 0.20) 0%, rgba(39, 43, 42, 0.20) 100%), rgba(16, 142, 102, 0.54); */
+  }
+  .KeypointRow{
+    display: grid;
+    grid-template-columns: 1fr 170px 170px;
+    border-bottom:0.5px solid rgba(16, 142, 102, 0.54);
+    font-family: Poppins;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .KeypointRow div:last-child{
+    border-right: 0;
+  }
+  .pointRow{
+    display: grid;
+    grid-template-columns: 1fr 85px 85px 85px 85px;
+    font-family: Poppins;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .pointRow:nth-child(even){
+    background: #FCFFFE;
+  }
+  
+  
+  .pointDataCommon{
+    padding: 5px;
+    border-right:0.5px solid rgba(16, 142, 102, 0.54);
+  }
+  .pointRow .pointDataCommon:last-child{
+    border-right: 0;
+  }
+  .pointCenter{
+    width: 100%;
+    text-align: center;
+  }
+  
+  .pointRecommendedTableData{
+    color: #108E66;
+  }
+
+@media screen and (max-width: 600px) {
+    .Keypoints{
+        padding: 10px;
+    }
+    .point{
+        margin-bottom: 0px;
+    }
+    .point-heading{
+        font-size: 10px;
+    }
+    .point-content{
+        font-size: 8px;
+    }
+    .point ul li{
+        margin-bottom: 2px;
+    }
+    .KeypointRow{
+        grid-template-columns: 1fr 110px 110px;
+        font-size: 9px;
+    }
+    .pointRow{
+        grid-template-columns: 1fr 55px 55px 55px 55px;
+        font-size: 8px;
+      }
+ }
+ 
+ @media screen and (max-width: 450px) {
+    .Keypoints{
+        padding: 5px;
+        --EXTRA-SPACE:120px;
+    }
+    .point{
+        margin-bottom: 0px;
+    }
+    .point-heading{
+        font-size: 9px;
+    }
+    .point-content{
+        font-size: 6px;
+    }
+    .point ul li{
+        margin-bottom: 2px;
+    }
+    .KeypointRow{
+        grid-template-columns: 1fr 110px 110px;
+        font-size: 7px;
+    }
+    .pointRow{
+        grid-template-columns: 1fr 55px 55px 55px 55px;
+        font-size: 6px;
+      }
+ 
+ }

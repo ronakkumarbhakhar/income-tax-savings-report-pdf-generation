@@ -1,0 +1,156 @@
+.First{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+    padding-bottom: 0;
+    width: var(--WIDTH);
+    max-width: var(--MAX-WIDTH);
+    aspect-ratio: var(--ASPECT-RATIO);
+    height: var(--HEIGHT);
+    font-family: var(--MAIN-FONT);
+    font-style: normal;
+    line-height: normal;
+    background-color:#fff;
+    /* page-break-after: always; */
+    /* height: calc(100vh - 40px); */
+}
+
+.First-logo{
+    width: 165px;
+    height: 28px;
+}
+
+.First-heading{
+    margin-top: 40px;
+    color: #0E5235;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.First-content{
+    color: rgba(39, 43, 42, 0.90);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.barChart{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    height: 300px;
+}
+
+.barChart canvas{
+    height: 100%;
+}
+
+.firstTable{
+    border-radius: 4px;
+    border: 0.5px solid rgba(16, 142, 102, 0.54);
+    overflow: hidden;
+    width: auto;
+    margin: 10px 0px;
+    background: linear-gradient(0deg, rgba(16, 142, 102, 0.05) 0%, rgba(16, 142, 102, 0.05) 100%), #FCFFFE;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    /* background: linear-gradient(0deg, rgba(39, 43, 42, 0.20) 0%, rgba(39, 43, 42, 0.20) 100%), rgba(16, 142, 102, 0.54); */
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 100px 100px;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.row:nth-child(even){
+    background: #FCFFFE;
+}
+
+.tableHeading{
+    font-size: 12px;
+    font-weight: 500;
+    /* border-bottom:0.5px solid rgba(16, 142, 102, 0.54); */
+}
+
+.dataCommon{
+    padding: 5px;
+    border-right:0.5px solid rgba(16, 142, 102, 0.54);
+}
+.row .dataCommon:last-child{
+    border-right: 0;
+}
+.center{
+    width: 100%;
+    text-align: center;
+}
+
+.recommendedTableData{
+    color: #108E66;
+}
+
+.firstEndContent{
+    margin: 10px 0px;
+    font-size: 11px;
+}
+
+@media screen and (max-width: 600px) {
+    .First-heading{
+        margin-top: 10px;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }    
+    .barChart{
+        margin: 0;
+        height: 200px;
+        justify-content: flex-start;
+    }
+    .First-content{
+        font-size: 11px;
+    }
+    .row{
+        font-size: 9px;
+    }
+    .firstEndContent{
+        margin: 5px 0px;
+        font-size: 9px;
+    }
+    .firstTable{
+        margin: 5px 0px;
+    }
+ }
+ 
+ @media screen and (max-width: 450px) {
+    .First-heading{
+        margin-top: 5px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }    
+    .barChart{
+        margin: 0;
+        height: 150px;
+        display: block;
+    }
+    .First-content{
+        font-size: 9px;
+    }
+    .row{
+        font-size: 6px;
+    }
+    .firstEndContent{
+        margin: 0px 0px;
+        font-size: 7px;
+    }
+    .firstTable{
+        margin: 5px 0px;
+    }
+ }
